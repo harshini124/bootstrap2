@@ -1,0 +1,236 @@
+<!doctype html>  
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <title>Harshini's Portfolio Design System: Buttons</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/sidebars.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+  <link rel="shortcut icon" href="../images/logo_favicon.png">
+
+  <style>
+    h2, h3 {
+      color: #C34A76 !important;
+    }
+
+    .sidebar {
+      background-color: #C34A76 !important;
+      color: white;
+    }
+
+    .sidebar a,
+    .btn-toggle,
+    .btn-toggle-nav a {
+      color: white !important;
+    }
+
+    .btn-toggle-nav a:hover {
+      background-color: #b03764 !important;
+    }
+
+    .nav-logo {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .logo-container {
+      text-align: center;
+    }
+
+    .btn {
+      margin: 0.5rem;
+      display: inline-block;
+      text-align: center;
+    }
+
+    .btn-primary-solid,
+    .btn-secondary-solid,
+    .btn-tertiary-solid {
+      padding: 14px 19px;
+      border-radius: 15px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      font-size: 20px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      width: 100%;
+      max-width: 250px;
+    }
+
+    .btn-primary-solid { background-color: #004C91; color: white; border: none; }
+    .btn-secondary-solid { background-color: #314D66; color: white; border: none; }
+    .btn-tertiary-solid { background-color: #8CB1D2; color: white; border: none; }
+
+    .btn-link-primary,
+    .btn-link-secondary,
+    .btn-link-accent {
+      background: none;
+      border: none;
+      padding: 14px 19px;
+      border-radius: 15px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      font-size: 24px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      width: 100%;
+      max-width: 250px;
+    }
+
+    .btn-link-primary { color: black; }
+    .btn-link-secondary { color: #004C91; }
+    .btn-link-accent { color: #CC5500; }
+
+    .btn-outline-primary {
+      background: none;
+      color: black;
+      border: 2px solid #CC5500;
+      border-radius: 15px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      font-size: 20px;
+      cursor: pointer;
+      text-decoration: underline;
+      transition: all 0.3s ease;
+      padding: 14px 19px;
+      white-space: nowrap;
+      width: 100%;
+      max-width: 250px;
+    }
+
+    @media (min-width: 576px) {
+      .btn {
+        width: auto;
+      }
+    }
+  </style>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<main class="d-flex flex-nowrap">
+
+  <!-- LEFT SIDEBAR NAVBAR -->
+  <div class="flex-shrink-0 p-3 sidebar" style="width: 200px;">
+    <div class="logo-container mb-3">
+      <a href="../index.html" class="d-flex align-items-center justify-content-center text-decoration-none">
+        <img src="../images/logo_color.png" class="nav-logo" alt="primary logo">
+      </a>
+    </div>
+
+    <ul class="list-unstyled ps-0">
+      <li class="mb-1">
+        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" 
+        data-bs-toggle="collapse" data-bs-target="#foundations-collapse" aria-expanded="false">
+          Foundations
+        </button>
+        <div class="collapse" id="foundations-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="../foundation/type.html" class="d-inline-flex text-decoration-none rounded">Typography</a></li>
+            <li><a href="../foundation/color.html" class="d-inline-flex text-decoration-none rounded">Color</a></li>
+            <li><a href="../foundation/logo.html" class="d-inline-flex text-decoration-none rounded">Logo</a></li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="mb-1">
+        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" 
+        data-bs-toggle="collapse" data-bs-target="#components-collapse" aria-expanded="true">
+          Components
+        </button>
+        <div class="collapse show" id="components-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="component1.html" class="d-inline-flex text-decoration-none rounded">NavBar</a></li>
+            <li><a href="component2.html" class="d-inline-flex text-decoration-none rounded">Footer</a></li>
+            <li><a href="component3.html" class="d-inline-flex text-decoration-none rounded">Button</a></li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="mb-1">
+        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" 
+        data-bs-toggle="collapse" data-bs-target="#patterns-collapse" aria-expanded="false">
+          Page Patterns
+        </button>
+        <div class="collapse" id="patterns-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="../patterns/page1.html" class="d-inline-flex text-decoration-none rounded">Homepage</a></li>
+            <li><a href="../patterns/page2.html" class="d-inline-flex text-decoration-none rounded">My Projects</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- MAIN PAGE CONTENT -->
+  <div class="container-fluid overflow-auto">
+    <div class="row p-5">
+      <div class="col-12">
+        <h2>Buttons</h2>
+        <p>Examples and design principles for button components.</p>
+      </div>
+
+      <div class="col-12 mt-3">
+        <h3>Example</h3>
+        <div class="d-flex flex-wrap gap-2">
+          <button class="btn btn-primary-solid">View Study</button>
+          <button class="btn btn-secondary-solid">View Study</button>
+          <button class="btn btn-tertiary-solid">View Study</button>
+        </div>
+      </div>
+
+      <div class="col-12 mt-5">
+        <h3 class="mt-4">LinkedIn Buttons</h3>
+        <div class="d-flex flex-wrap gap-2">
+          <button class="btn btn-link-primary">LinkedIn</button>
+          <button class="btn btn-link-secondary">LinkedIn</button>
+          <button class="btn btn-link-accent">LinkedIn</button>
+        </div>
+      </div>
+
+      <div class="col-12 mt-5">
+        <h3>Case Study Button</h3>
+        <div class="d-flex flex-wrap">
+          <button class="btn btn-outline-primary">Case Study</button>
+        </div>
+      </div>
+
+      <div class="col-12 mt-5">
+        <h3>Code</h3>
+        <pre class="language-markup code-bkg"><code>
+&lt;button class="btn btn-primary-solid"&gt;View Study&lt;/button&gt;
+&lt;button class="btn btn-secondary-solid"&gt;View Study&lt;/button&gt;
+&lt;button class="btn btn-tertiary-solid"&gt;View Study&lt;/button&gt;
+
+&lt;button class="btn btn-link-primary"&gt;LinkedIn&lt;/button&gt;
+&lt;button class="btn btn-link-secondary"&gt;LinkedIn&lt;/button&gt;
+&lt;button class="btn btn-link-accent"&gt;LinkedIn&lt;/button&gt;
+
+&lt;button class="btn btn-outline-primary"&gt;Case Study&lt;/button&gt;
+        </code></pre>
+      </div>
+
+      <div class="col-12 mt-3">
+        <h3>Usage</h3>
+        <p>Buttons are used to trigger actions. Style them appropriately based on their function.</p>
+      </div>
+
+      <div class="col-12 mt-3">
+        <h3>Accessibility</h3>
+        <p>For better accessibility, ensuring buttons are eye-catching and have clear, descriptive labels using the <code>aria-label</code> attribute is important. This helps screen reader users understand the purpose of each button. Also, buttons should have visible focus states to allow keyboard navigation.</p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/sidebars.js"></script>
+</body>
+</html>

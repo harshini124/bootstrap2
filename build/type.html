@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+
+  <title>Harshini's Design System : Typography</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <!-- Custom styles for this template -->
+  <link href="../css/sidebars.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+  <link rel="shortcut icon" href="../images/logo_favicon.png">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* Typography Hierarchy: Asap-Roboto-Asap Pattern */
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Asap', sans-serif;
+      font-weight: 700;
+      color: #C34A76;
+    }
+
+    .sidebar-custom {
+      background-color: #C34A76 !important;
+    }
+
+    .btn-toggle, .btn-toggle-nav a {
+      color: white !important;
+    }
+
+    .btn-toggle:hover, .btn-toggle-nav a:hover {
+      color: #f8d3e1 !important;
+    }
+
+    .main-bg {
+      background-color: #FAF3E0;
+    }
+
+    .b-example-vr {
+      background-color: #004C91 !important;
+      width: 1px;
+    }
+    
+    h1 {
+      font-family: 'Asap', sans-serif;
+      font-weight: 700;
+      font-size: 2.488rem;
+    }
+    
+    h2, h3, h4 {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+    }
+    
+    h2 {
+      font-size: 2.074rem;
+    }
+    
+    h3 {
+      font-size: 1.728rem;
+    }
+    
+    h4 {
+      font-size: 1.44rem;
+    }
+    
+    h5, h6 {
+      font-family: 'Asap', sans-serif;
+      font-weight: 700;
+    }
+    
+    h5 {
+      font-size: 1.2rem;
+    }
+    
+    h6 {
+      font-size: 1rem;
+    }
+    
+    body, p {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      font-size: 1rem;
+    }
+
+    .specs code {
+      background-color: transparent;
+      color: #CC5500;
+      padding: 0;
+      border-radius: 0;
+      display: block;
+    }
+
+    /* Card styling to match color page */
+    .typography-card {
+      border-radius: 8px;
+      border: none;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="d-flex flex-nowrap">
+
+    <!-- Sidebar -->
+    <div class="flex-shrink-0 p-3 sidebar-custom" style="width: 200px;">
+      <!-- Logo Section -->
+         
+      <div class="logo-container">
+        <a href="../index.html"
+          class="d-flex align-items-center text-center pb-3 mb-3 text-decoration-none">
+          <img src="../images/logo_color.png" class="nav-logo" alt="primary logo">
+        </a>
+      </div>
+
+      <ul class="list-unstyled ps-0">
+        <li class="mb-1">
+          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+            data-bs-toggle="collapse" data-bs-target="#foundations-collapse" aria-expanded="true">
+            FOUNDATIONS
+          </button>
+          <div class="collapse show" id="foundations-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="type.html" class="d-inline-flex text-decoration-none rounded">Typography</a></li>
+              <li><a href="color.html" class="d-inline-flex text-decoration-none rounded">Color</a></li>
+              <li><a href="logo.html" class="d-inline-flex text-decoration-none rounded">Logo</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="mb-1">
+          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+            data-bs-toggle="collapse" data-bs-target="#components-collapse" aria-expanded="false">
+            COMPONENTS
+          </button>
+          <div class="collapse" id="components-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="../components/component1.html" class="d-inline-flex text-decoration-none rounded">NavBar</a></li>
+              <li><a href="../components/component2.html" class="d-inline-flex text-decoration-none rounded">Footer</a></li>
+              <li><a href="../components/component3.html" class="d-inline-flex text-decoration-none rounded">Buttons</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="mb-1">
+          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+            data-bs-toggle="collapse" data-bs-target="#patterns-collapse" aria-expanded="false">
+            PAGE PATTERNS
+          </button>
+          <div class="collapse" id="patterns-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="../patterns/page1.html" class="d-inline-flex text-decoration-none rounded">Homepage</a></li>
+              <li><a href="../patterns/page2.html" class="d-inline-flex text-decoration-none rounded">My Projects</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="b-example-divider b-example-vr"></div>
+
+    <!-- Page Content -->
+    <div class="container-fluid overflow-auto main-bg">
+      <div class="row p-5">
+        <div class="col-12">
+          <div class="card typography-card">
+            <div class="card-header">
+              <div style="text-align: center; margin-top: 20px;">
+                <h1>Typography</h1>
+                <h2 style="font-size: 2rem; color:#004C91 ; display: inline-block; padding-bottom: 5px;">
+                    <span style="font-family: 'Asap', sans-serif; font-weight: 700;">Asap</span> |
+                    <span style="font-family: 'Roboto', sans-serif; font-weight: 700;">Roboto</span> | 
+                    <span style="font-family: 'Asap', sans-serif; font-weight: 700;">Asap</span>  
+                </h2>
+              </div>
+            </div>
+            
+            <div class="card-body">
+              <div class="row">
+                <div class="col-lg-6 col-md-12 mt-3">
+                  <h1 class="text-start">Heading 1</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut efficitur erat, at dapibus massa.
+                    Suspendisse scelerisque felis vitae ligula ullamcorper, id consequat lectus pharetra.</p>
+                </div>
+                <div class="col-lg-1 d-none d-lg-block"></div>
+                <div class="col-lg-5 col-md-12 specs">
+                  <code>
+                    font-family: 'Asap', sans-serif;
+                    <br>font-size: 2.488rem;
+                    <br>font-weight: 700;
+                    <br>font-style: normal;
+                  </code>
+                </div>
+              </div>
+                
+              <hr>
+              <div class="row">
+                <div class="col-lg-6 col-md-12">
+                  <h2>Heading 2</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut efficitur erat, at dapibus massa.
+                    Suspendisse scelerisque felis vitae ligula ullamcorper, id consequat lectus pharetra.</p>
+                </div>
+                <div class="col-lg-1 d-none d-lg-block"></div>
+                <div class="col-lg-5 col-md-12 specs">
+                  <code>
+                    font-family: 'Roboto', sans-serif;
+                    <br>font-size: 2.074rem;
+                    <br>font-weight: 700;
+                    <br>font-style: normal;
+                  </code>
+                </div>
+              </div>
+                
+              <hr>
+              <div class="row">
+                <div class="col-lg-6 col-md-12">
+                  <h3>Heading 3</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut efficitur erat, at dapibus massa.
+                    Suspendisse scelerisque felis vitae ligula ullamcorper, id consequat lectus pharetra.</p>
+                </div>
+                <div class="col-lg-1 d-none d-lg-block"></div>
+                <div class="col-lg-5 col-md-12 specs">
+                  <code>
+                    font-family: 'Roboto', sans-serif;
+                    <br>font-size: 1.728rem;
+                    <br>font-weight: 700;
+                    <br>font-style: normal;
+                  </code>
+                </div>
+              </div>
+
+              <hr>
+              <div class="row">
+                <div class="col-lg-6 col-md-12">
+                  <h4>Heading 4</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut efficitur erat, at dapibus massa.
+                    Suspendisse scelerisque felis vitae ligula ullamcorper, id consequat lectus pharetra.</p>
+                </div>
+                <div class="col-lg-1 d-none d-lg-block"></div>
+                <div class="col-lg-5 col-md-12 specs">
+                  <code>
+                    font-family: 'Roboto', sans-serif;
+                    <br>font-size: 1.44rem;
+                    <br>font-weight: 700;
+                    <br>font-style: normal;
+                  </code>
+                </div>
+              </div>
+
+              <hr>
+              <div class="row">
+                <div class="col-lg-6 col-md-12">
+                  <h5>Heading 5</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut efficitur erat, at dapibus massa.
+                    Suspendisse scelerisque felis vitae ligula ullamcorper, id consequat lectus pharetra.</p>
+                </div>
+                <div class="col-lg-1 d-none d-lg-block"></div>
+                <div class="col-lg-5 col-md-12 specs">
+                  <code>
+                    font-family: 'Asap', sans-serif;
+                    <br>font-size: 1.2rem;
+                    <br>font-weight: 700;
+                    <br>font-style: normal;
+                  </code>
+                </div>
+              </div>
+
+              <hr>
+              <div class="row">
+                <div class="col-lg-6 col-md-12">
+                  <h6>Heading 6</h6>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut efficitur erat, at dapibus massa.
+                    Suspendisse scelerisque felis vitae ligula ullamcorper, id consequat lectus pharetra.</p>
+                </div>
+                <div class="col-lg-1 d-none d-lg-block"></div>
+                <div class="col-lg-5 col-md-12 specs">
+                  <code>
+                    font-family: 'Asap', sans-serif;
+                    <br>font-size: 1rem;
+                    <br>font-weight: 700;
+                    <br>font-style: normal;
+                  </code>
+                </div>
+              </div>
+
+              <hr>
+              <div class="row">
+                <div class="col-lg-6 col-md-12">
+                  <p>Primary Body Text</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut efficitur erat, at dapibus massa.
+                    Suspendisse scelerisque felis vitae ligula ullamcorper, id consequat lectus pharetra.</p>
+                </div>
+                <div class="col-lg-1 d-none d-lg-block"></div>
+                <div class="col-lg-5 col-md-12 specs">
+                  <code>
+                    font-family: 'Roboto', sans-serif;
+                    <br>font-size: 1rem;
+                    <br>font-weight: 400;
+                    <br>font-style: normal;
+                  </code>
+                </div>
+              </div>
+              
+              <hr>
+              <div class="row">
+                <div class="col-lg-6 col-md-12">
+                  <p><em>Emphasized Text</em></p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut efficitur erat, at dapibus massa.
+                    <em>Suspendisse scelerisque felis vitae ligula ullamcorper</em>, id consequat lectus pharetra.
+                  </p>
+                </div>
+                <div class="col-lg-1 d-none d-lg-block"></div>
+                <div class="col-lg-5 col-md-12 specs">
+                  <code>
+                    font-family: 'Roboto', sans-serif;
+                    <br>font-size: 1rem;
+                    <br>font-weight: 400;
+                    <br>font-style: italic;
+                  </code>
+                </div>
+              </div>
+
+              <hr>
+              <div class="row">
+                <div class="col-lg-6 col-md-12">
+                  <p><a href="#">Inline Link</a></p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut efficitur erat, at dapibus massa.
+                    Suspendisse scelerisque  <a
+                    href="#">felis vitae ligula </a>ullamcorper, id consequat lectus pharetra.
+                  </p>
+                </div>
+                <div class="col-lg-1 d-none d-lg-block"></div>
+                <div class="col-lg-5 col-md-12 specs">
+                  <code>
+                    font-family: 'Roboto', sans-serif;
+                    <br>font-size: 1rem;
+                    <br>font-weight: 400;
+                    <br>font-style: normal;
+                    <br>text-decoration: underline;
+                    <br>text-underline-offset: 0.3rem;
+                  </code>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+  <script src="../js/sidebars.js"></script>
+</body>
+</html>
